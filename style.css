@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-
+    overflow-x: hidden;
 }
 
  header{
@@ -19,7 +19,7 @@
     margin-right: 30px;
 }
 .header-left h1{
-    font-size: 64px;
+    font-size: 50px;
     line-height: 80px;
     font-weight: 700px;
     color: whitesmoke;
@@ -46,6 +46,7 @@
 header:hover .header-right img{
     transform: scale(1.4);
     transition: transform 2s;
+    scroll-behavior: none;
 }
 
 /* media quary */
@@ -139,15 +140,15 @@ header:hover .header-right img{
 /* main -bottom start */
 .main-bottom{
     display: grid;
-    grid-template-columns: 466px 567px;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     grid-gap: 50px;
 }
-.main-bottom-left{
 
-}
 .main-bottom-left h1{
     font-size: 50px;
     line-height: 60px;
@@ -163,9 +164,7 @@ header:hover .header-right img{
     height:44px;
     text-decoration: none;
 }
-.main-bottom-right{
 
-}
 .main-bottom-right img{
     width: 98%;
 }
@@ -218,7 +217,6 @@ header:hover .header-right img{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
          }
          .club-logo{
             margin-bottom: 15px;
@@ -226,7 +224,7 @@ header:hover .header-right img{
     }
 /* table start */
 table{
- width: 85%;
+ width: 80%;
  margin: 70px auto;
  text-align: center;
  border-collapse: collapse;
@@ -261,7 +259,7 @@ table td{
        }
        table th , tr ,td{
         border: 1px solid;
-        padding: 5px;
+        padding: 2px;
     } 
 }
 /* footer */
@@ -285,10 +283,10 @@ footer i{
 /* footer media query */
 @media (max-width:600px) {
     footer img{
-        width: 70%;
-        
+        width: 50%;
     }
     footer{
-        text-align: center;
+        width: 100%;
+         text-align: center;
     }
 }
