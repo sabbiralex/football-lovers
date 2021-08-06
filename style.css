@@ -46,7 +46,6 @@
 header:hover .header-right img{
     transform: scale(1.4);
     transition: transform 2s;
-    scroll-behavior: none;
 }
 
 /* media quary */
@@ -150,7 +149,7 @@ header:hover .header-right img{
 }
 
 .main-bottom-left h1{
-    font-size: 50px;
+    font-size: 40px;
     line-height: 60px;
     font-weight: 600px;
 }
